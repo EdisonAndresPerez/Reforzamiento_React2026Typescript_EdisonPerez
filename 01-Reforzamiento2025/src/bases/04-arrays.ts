@@ -2,11 +2,15 @@
 //const arregloNumeros: (number|string)[] = [10, 20, 30, 40, 50];
 const arregloNumeros: number[] = [10, 20, 30, 40, 50];
 
+const arregloDeString: string[] = ["hola", "como estan", "arreglo de string"];
+
 const arregloNumeros2 = [...arregloNumeros];
 
 //metodo push modifica el arreglo original
 arregloNumeros2.push(60);
 console.log({ arregloNumeros, arregloNumeros2 });
+
+console.log(arregloDeString)
 
 //------------------------------
 
