@@ -26,8 +26,20 @@ persona.edad = 21;
 
 //-----------------------------
 
+interface Persona3 {
+  nombre : string;
+  apellido : string;
+  edad : number;
+  profesion: string;
+  casado : boolean;
+  direccion: {
+    calle: string;
+    numero : number
+  }
+}
 
-const persona3 = {
+
+const persona3 : Persona3 = {
   nombre: "tomy",
   apellido: "perez",
   edad: 25,
