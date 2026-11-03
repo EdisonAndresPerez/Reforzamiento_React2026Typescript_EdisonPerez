@@ -1,12 +1,12 @@
 //-----------------------------------
 
-const primerNombre = "Edison";
-const segundoNombre = "Pérez";
+const primerNombre: string = "Edison";
+const segundoNombre :string = "Pérez";
 
 const nombreCompleto = `${primerNombre} ${segundoNombre}`;
 console.log(nombreCompleto);
 
-const edad = 21;
+const edad: number = 21;
 console.log(edad);
 
 //-----------------------------------

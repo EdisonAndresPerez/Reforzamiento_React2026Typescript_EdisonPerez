@@ -1,7 +1,14 @@
 //-----------------------------
 
+const nombre1 = "andres"
+const nombre2 = "perez"
+
+console.log(nombre1, nombre2)
+
+
 // ¿Qué es un objeto literal?
 // Un objeto literal es simplemente una forma directa de crear un objeto usando {}
+
 const persona = {
   nombre: "tomy",
   apellido: "perez",
