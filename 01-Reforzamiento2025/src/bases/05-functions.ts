@@ -53,15 +53,20 @@ function getUser() {
   };
 }
 
-const getUser2 = () => {
+interface GetUser {
+ uid: string;
+ username: string;
+}
+
+const getUser2  = (uid: string, username: string):GetUser => {
   return {
-    uid: "ABC123",
-    username: "El_Perezoso",
+    uid: uid,
+    username: username,
   };
 };
 
+const user2 = getUser2("ABC123", "El_papi12");
 const user = getUser();
-const user2 = getUser2();
 
 console.log(user, user2);
 
