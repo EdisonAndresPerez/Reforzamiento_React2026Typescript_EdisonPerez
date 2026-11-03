@@ -1,14 +1,14 @@
 //-----------------------------
 
-const nombre1 = "andres"
-const nombre2 = "perez"
+const nombre1 = "andres";
+const nombre2 = "perez";
 
-console.log(nombre1, nombre2)
-
+console.log(nombre1, nombre2);
 
 // ¿Qué es un objeto literal?
 // Un objeto literal es simplemente una forma directa de crear un objeto usando {}
 
+//podemos cambiar las propiedades del objeto literal
 const persona = {
   nombre: "tomy",
   apellido: "perez",
@@ -23,6 +23,25 @@ const persona = {
 
 persona.nombre = "andres";
 persona.edad = 21;
+
+//-----------------------------
+
+
+const persona3 = {
+  nombre: "tomy",
+  apellido: "perez",
+  edad: 25,
+  profesion: "desarrollador",
+  casado: false,
+  direccion: {
+    calle: "falsa",
+    numero: 123,
+  },
+};
+
+const personaCopia = structuredClone(persona3);
+console.log(personaCopia)
+
 
 //-----------------------------
 //operador spread ...
@@ -42,6 +61,7 @@ const spiderman = {
   poderes: ["trepar", "sentido arácnido", "fuerza sobrehumana"],
 };
 
+//desestructuración
 const iroman = { ...spiderman };
 
 iroman.nombre = "Tony Stark";
@@ -120,35 +140,30 @@ mascota.duenio.nombre = "medellin";
 
 console.log(mascota);
 
-
 //-----------------------------
 
 const heroes = {
   nombre: "Bruce Wayne",
   edad: 35,
-  ciudad: "Gotham"
-}
+  ciudad: "Gotham",
+};
 
-const heroes2 = {...heroes}
+const heroes2 = { ...heroes };
 
-heroes2.nombre = "Clark Kent"; 
-heroes2.edad = 32
-heroes2.ciudad = "Metropolis"
+heroes2.nombre = "Clark Kent";
+heroes2.edad = 32;
+heroes2.ciudad = "Metropolis";
 
 console.log(heroes, heroes2);
 
-
-
 //-----------------------------
-
-
 
 interface PropsCarro {
   marca: string;
   modelo: string;
-  anio : number
+  anio: number;
   esElectrico: boolean;
-  color: string
+  color: string;
 }
 
 const carro1: PropsCarro = {
@@ -156,40 +171,34 @@ const carro1: PropsCarro = {
   modelo: "Model S",
   anio: 2020,
   esElectrico: true,
-  color: "rojo"
-}
+  color: "rojo",
+};
 
 const carro2: PropsCarro = {
   marca: "Ford",
   modelo: "Mustang",
   anio: 1969,
   esElectrico: false,
-  color: "azul"
-}
+  color: "azul",
+};
 
 console.log(carro1, carro2);
 
-
-
 //-----------------------------
 
-
-
 interface PropsUniversidad {
-nombre : string,
-ciudad : string,
-pais : string,
+  nombre: string;
+  ciudad: string;
+  pais: string;
 }
-
 
 interface PropsEstudiante {
-  nombre: string,
-  edad: number,
-  promedio: number,
-  estaActivo: boolean,
-  universidad : PropsUniversidad
+  nombre: string;
+  edad: number;
+  promedio: number;
+  estaActivo: boolean;
+  universidad: PropsUniversidad;
 }
-
 
 const estudiante1: PropsEstudiante = {
   nombre: "Andres",
@@ -199,6 +208,6 @@ const estudiante1: PropsEstudiante = {
   universidad: {
     nombre: "Universidad Nacional",
     ciudad: "Bogota",
-    pais: "Colombia"
-  }
-}
+    pais: "Colombia",
+  },
+};
