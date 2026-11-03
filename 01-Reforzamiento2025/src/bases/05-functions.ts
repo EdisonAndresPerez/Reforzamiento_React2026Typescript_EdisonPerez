@@ -10,6 +10,19 @@ function despedir(nombre: string) {
 }
 console.log(despedir("perez"));
 
+
+//funciones typadas
+function saludarTypado(name: string) {
+ return `hola ${name}`
+}
+console.log(saludarTypado("goku"))
+
+function saludarTypado2(name: string): string {
+  return `saludar vegeta ${name}`
+ }
+ console.log(saludarTypado2("goku"))
+
+
 //------------------
 
 //funcion tradicional
