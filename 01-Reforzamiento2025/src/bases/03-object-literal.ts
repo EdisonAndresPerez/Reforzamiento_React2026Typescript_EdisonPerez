@@ -27,19 +27,45 @@ persona.edad = 21;
 //-----------------------------
 
 interface Persona3 {
-  nombre : string;
-  apellido : string;
-  edad : number;
+  nombre: string;
+  apellido: string;
+  edad: number;
   profesion: string;
-  casado : boolean;
+  casado: boolean;
+  //mala practica
   direccion: {
     calle: string;
-    numero : number
-  }
+    numero: number;
+  };
 }
 
+interface PersonaType {
+  nombre: string;
+  apellido: string;
+  edad: number;
+  profesion: string;
+  casado: boolean;
+  direccion: Direccion;
+}
 
-const persona3 : Persona3 = {
+interface Direccion {
+  calle: string;
+  numero: number;
+}
+
+const persona3: Persona3 = {
+  nombre: "tomy",
+  apellido: "perez",
+  edad: 25,
+  profesion: "desarrollador",
+  casado: false,
+  direccion: {
+    calle: "falsa",
+    numero: 123,
+  },
+};
+
+const persona4Type: PersonaType = {
   nombre: "tomy",
   apellido: "perez",
   edad: 25,
@@ -52,8 +78,7 @@ const persona3 : Persona3 = {
 };
 
 const personaCopia = structuredClone(persona3);
-console.log(personaCopia)
-
+console.log(personaCopia);
 
 //-----------------------------
 //operador spread ...
