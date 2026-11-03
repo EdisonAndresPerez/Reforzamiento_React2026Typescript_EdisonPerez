@@ -35,6 +35,10 @@ const comentar2 = (comentario: string): string => {
   return `${comentario}`;
 };
 
+const funcionFlecha = (name:string): string => {
+return `hola ${name}`
+}
+
 console.log(
   comentar("lorem ipsum dolor sit amet"),
   comentar2("consectetur adipiscing elit")
