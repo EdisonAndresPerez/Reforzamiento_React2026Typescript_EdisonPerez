@@ -13,6 +13,9 @@ const persona = {
     rango: "El mejor"
 };
 
+const name = persona.nombre;
+console.log(name)
+
 // Podemos cambiar el nombre de las propiedades al desestructurar:
 const { nombre: santiago_marin, llave, edad, rango } = persona;
 
