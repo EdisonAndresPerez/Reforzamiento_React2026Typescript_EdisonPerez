@@ -4,10 +4,12 @@
 //Desestructuracion de Objetos => {}
 //Desestructuracion de Arreglos => []
 
-const nombresPersonas = ['goku', 'vegeta', 'gohan', 'bulma']
+const nombresPersonas = ['goku', 'vegeta', 'gohan', 'trunks', 'bulma']
 
-const [, , , pbulma] = nombresPersonas
+const [, , , trunks, ] = nombresPersonas
+const [, , , , pbulma] = nombresPersonas
 
+console.log(trunks)
 console.log({pbulma})
 
 const returnArregloFn = () => {
