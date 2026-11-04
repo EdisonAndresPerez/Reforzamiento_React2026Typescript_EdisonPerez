@@ -85,3 +85,8 @@ console.log(funcionCorta2)
 
 //------------------
 
+
+//mejor forma de utilizar funciones en react 
+//funciones flecha 
+const funcionFlechaPreferida = (name: string) => `Hola, como estas ${name}`;
+console.log(funcionFlechaPreferida("Andres"))
