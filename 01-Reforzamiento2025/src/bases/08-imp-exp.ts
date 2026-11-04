@@ -3,6 +3,7 @@ import { heroes, Owner, type Hero } from "../data/heroes.data";
 ///--------------------------
 
 const getHeroePorId = (id: number): Hero | undefined => {
+  //metodo find para buscar algo dentro de nuestro arreglo
   const hero = heroes.find((hero) => {
     return hero.id === id;
   });
