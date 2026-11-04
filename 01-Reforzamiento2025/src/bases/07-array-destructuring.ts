@@ -1,5 +1,9 @@
 //------------------
 
+//Tener en cuenta
+//Desestructuracion de Objetos => {}
+//Desestructuracion de Arreglos => []
+
 const nombresPersonas = ['goku', 'vegeta', 'gohan', 'bulma']
 
 const [, , , pbulma] = nombresPersonas
