@@ -8,12 +8,12 @@ import "./index.css";
 // import './bases/05-functions'
 // import './bases/06-obj-desestructuring'
 // import './bases/07-array-destructuring'
-import './bases/08-imp-exp'
+// import './bases/08-imp-exp'
 import {getHeroesByOwner} from './bases/08-imp-exp'
 import { Owner } from "./data/heroes.data";
 //import './bases/09-promesas'
 //import './bases/10-fetch-api'
-//import './bases/11-async-await'
+import './bases/11-async-await'
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

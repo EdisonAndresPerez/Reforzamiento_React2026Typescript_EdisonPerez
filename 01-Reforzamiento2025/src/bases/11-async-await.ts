@@ -9,16 +9,23 @@ const createImageInsideDOM = (url: string) => {
   document.body.append(imgElement);
 };
 
-const getRandomGifUrlAsyn = async () => {
+//funcion asyncrona
+const funcionAsincrona = async () => {
+  const datoFalso = await 'HOlaaa';
 
+  return datoFalso;
+};
+
+console.log(funcionAsincrona());
+
+const getRandomGifUrlAsyn = async () => {
   const response = await fetch(
-    `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`
+    `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`,
   );
 
-  const {data}: GiphyRandom = await response.json();
+  const { data }: GiphyRandom = await response.json();
 
   return data.images.original.url;
 };
 
-
-getRandomGifUrlAsyn().then(createImageInsideDOM)
+getRandomGifUrlAsyn().then(createImageInsideDOM);
