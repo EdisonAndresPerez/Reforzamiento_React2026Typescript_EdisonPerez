@@ -7,6 +7,11 @@ const fullNombre = `El nombre es:
 console.log(fullNombre)
 
 
+const fullNombreTexto = `El nombre es:
+ edison andres perez martinez
+`
+console.log(fullNombreTexto)
+
 //-----------------------------
 const videoJuegoFavorito = "stardew valley";
 const consola = "Nintendo Switch";

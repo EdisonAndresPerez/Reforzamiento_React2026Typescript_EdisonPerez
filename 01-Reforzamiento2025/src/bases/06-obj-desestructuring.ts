@@ -13,8 +13,14 @@ const persona = {
     rango: "El mejor"
 };
 
+const name = persona.nombre;
+const age = persona.edad;
+const range = persona.rango
+console.log({name, age, range})
+
 // Podemos cambiar el nombre de las propiedades al desestructurar:
 const { nombre: santiago_marin, llave, edad, rango } = persona;
+
 
 // Equivalente en JavaScript clásico:
 // const nombre = persona.nombre;
@@ -56,9 +62,11 @@ const heroe: Hero = {
     rango: "El programador supremo"
 };
 
-// Desestructuración anidada del resultado de la función
-const { rank, keyName, user: { nombre } } = useContextt(heroe);
 
+
+// Desestructuración anidada del resultado de la función
+
+const { rank, keyName, user: { nombre } } = useContextt(heroe);
 console.log({ rank, keyName, nombre });
 
 

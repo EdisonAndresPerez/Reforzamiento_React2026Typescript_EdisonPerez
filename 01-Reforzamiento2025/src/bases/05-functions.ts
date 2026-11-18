@@ -10,6 +10,19 @@ function despedir(nombre: string) {
 }
 console.log(despedir("perez"));
 
+
+//funciones typadas
+function saludarTypado(name: string) {
+ return `hola ${name}`
+}
+console.log(saludarTypado("goku"))
+
+function saludarTypado2(name: string): string {
+  return `saludar vegeta ${name}`
+ }
+ console.log(saludarTypado2("goku"))
+
+
 //------------------
 
 //funcion tradicional
@@ -21,6 +34,10 @@ function comentar(comentario: string): string {
 const comentar2 = (comentario: string): string => {
   return `${comentario}`;
 };
+
+const funcionFlecha = (name:string): string => {
+return `hola ${name}`
+}
 
 console.log(
   comentar("lorem ipsum dolor sit amet"),
@@ -36,15 +53,20 @@ function getUser() {
   };
 }
 
-const getUser2 = () => {
+interface GetUser {
+ uid: string;
+ username: string;
+}
+
+const getUser2  = (uid: string, username: string):GetUser => {
   return {
-    uid: "ABC123",
-    username: "El_Perezoso",
+    uid: uid,
+    username: username,
   };
 };
 
+const user2 = getUser2("ABC123", "El_papi12");
 const user = getUser();
-const user2 = getUser2();
 
 console.log(user, user2);
 
@@ -63,3 +85,8 @@ console.log(funcionCorta2)
 
 //------------------
 
+
+//mejor forma de utilizar funciones en react 
+//funciones flecha 
+const funcionFlechaPreferida = (name: string) => `Hola, como estas ${name}`;
+console.log(funcionFlechaPreferida("Andres"))
