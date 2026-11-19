@@ -1,9 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import  PrimerComponente  from "./PrimerComponente.jsx";
+// import "./index.css";
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <h1>Hola mundo, estructura de archivos limpios</h1>
+    <PrimerComponente />
   </StrictMode>,
-)
+);
