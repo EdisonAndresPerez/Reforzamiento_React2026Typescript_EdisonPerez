@@ -24,9 +24,9 @@ const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProdu
                 width: 150,
                 color: 'blue',
             }}>{name}</span>
-            <button>{restarProducto}</button>
-            <button>{agregarProducto}</button>
-            <span>{cantidadProducto}</span>
+            <button>-{restarProducto}</button>
+            <button>+{agregarProducto}</button>
+            <span><strong>{cantidadProducto}</strong></span>
         </section>
     );
 }
