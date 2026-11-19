@@ -22,6 +22,7 @@ const ComponenteTarea = () => {
     //     ciudad: "Ibague",
     //     Pais: "Colombia"
     // }
+
     return (
         <div>
 
@@ -34,8 +35,11 @@ const ComponenteTarea = () => {
             <p>{esEstudiante ? "Estudia en la UNAD" : "No, esta vagando"}</p>
 
             <h3>Direccion</h3>
-            {JSON.stringify(direccion)}
-            <p></p>
+            <p
+            style={}
+            >
+                {JSON.stringify(direccion)}</p>
+          
         </div>
     );
 }
