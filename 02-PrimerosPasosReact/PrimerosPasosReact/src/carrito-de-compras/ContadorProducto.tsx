@@ -1,13 +1,16 @@
 
 interface DatosProductos {
     name: string
+    agregarProducto : number
+    restarProducto : number
+    cantidadProducto : number
 
 }
 
 
 
 
-const ContadorProducto = ({ name }: DatosProductos) => {
+const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProducto }: DatosProductos) => {
     return (
         <section
             style={{
@@ -21,9 +24,9 @@ const ContadorProducto = ({ name }: DatosProductos) => {
                 width: 150,
                 color: 'blue',
             }}>{name}</span>
-            <button>-1</button>
-            <button>+1</button>
-            <span>10</span>
+            <button>{restarProducto}</button>
+            <button>{agregarProducto}</button>
+            <span>{cantidadProducto}</span>
         </section>
     );
 }
