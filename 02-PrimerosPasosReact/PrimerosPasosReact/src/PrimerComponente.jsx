@@ -1,16 +1,21 @@
-import React from "react";
-
+import ContadorProducto from './carrito-de-compras/ContadorProducto'
+ 
 const PrimerComponente = () => {
   return (
     <>
-      <div>
+      <h1>Carrito de Compras - BunkerAmericano</h1>
+      <ContadorProducto/>
+
+
+
+      {/* <div>
         Hola Este es el primer componente
         <p>bienvenidos</p>
       </div>
 
       <div>
         <button>Entrar</button>
-      </div>
+      </div> */}
     </>
   );
 };
