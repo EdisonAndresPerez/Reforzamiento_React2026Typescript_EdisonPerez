@@ -4,7 +4,7 @@
 
 - Active branch: `02-primerosPasos_React`. The only tracked app is `02-PrimerosPasosReact/PrimerosPasosReact/` (React 19, Vite 8, TypeScript 6).
 - `01-Reforzamiento2025/` was deleted from this branch; any local copy is untracked leftovers (`node_modules`, `.env.local`, `.vite`). That module and its own instructions live on `origin/main` / `origin/01-reforzamiento_typescript`.
-- Root `README.md` is stale here: it documents module 01 and the old branch. The nested `README.md` is unmodified Vite boilerplate. Trust `package.json`, tsconfigs, and ESLint config instead.
+- Root `README.md` now documents module 02. The nested `README.md` is unmodified Vite boilerplate. Trust `package.json`, tsconfigs, and ESLint config for toolchain details.
 - No CI, tests, or test framework. Do not invent test commands.
 
 ## Commands
@@ -20,13 +20,13 @@ npm run preview
 npx tsc -b        # typecheck only; no typecheck script
 ```
 
-Build and lint both pass cleanly on this branch, so any new error is a regression.
+Treat new build/lint errors as regressions; local WIP in components may temporarily break them.
 
 ## App wiring
 
-- `src/main.tsx` is the only ReactDOM entry: `<App />` in `<StrictMode>` mounted into `#root` from `index.html`.
-- `src/App.tsx` is the Vite starter page with a local `useState` counter; `src/App.css`, `src/index.css`, `public/icons.svg`, and `public/favicon.svg` support it. There is no routing, state library, env config, or API code.
-- `vite.config.ts` enables `@vitejs/plugin-react`; there is no custom Vite config.
+- `src/main.tsx` is the only ReactDOM entry: `<ComponenteTarea />` in `<StrictMode>` mounted into `#root` from `index.html`.
+- `src/ComponenteTarea.tsx` is the mounted component; `src/PrimerComponente.jsx` exists but its import and JSX in `main.tsx` are commented out. The starter `App.tsx`, `App.css`, `index.css`, and `src/assets/` were removed; `public/icons.svg` and `public/favicon.svg` remain.
+- No routing, state library, env config, or API code. `vite.config.ts` enables `@vitejs/plugin-react`; there is no custom Vite config.
 
 ## Config constraints
 
