@@ -12,7 +12,7 @@ const ComponenteTarea = () => {
 
             <h1>{nombre}</h1>
             <h3>{apellido}</h3>
-            <p>Mis juegos favoritos: {listaJuegosFavoritos}</p>
+            <p>Mis juegos favoritos: {listaJuegosFavoritos.join(', ')}</p>
         </div>
     );
 }
