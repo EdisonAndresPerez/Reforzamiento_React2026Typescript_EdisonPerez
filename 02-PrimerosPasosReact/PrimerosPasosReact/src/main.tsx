@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import  PrimerComponente  from "./PrimerComponente.jsx";
+import  PrimerComponente  from "./PrimerComponente.js";
 // import ComponenteTarea from "./ComponenteTarea";
 // import "./index.css";
 

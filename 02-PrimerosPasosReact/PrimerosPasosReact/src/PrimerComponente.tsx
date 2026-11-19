@@ -1,13 +1,17 @@
 import ContadorProducto from './carrito-de-compras/ContadorProducto'
  
-const PrimerComponente = () => {
+
+
+
+
+const PrimerComponente = ( )  => {
   return (
     <>
       <h1>Carrito de Compras - BunkerAmericano</h1>
-      <ContadorProducto/>
-      <ContadorProducto/>
-      <ContadorProducto/>
-      <ContadorProducto/>
+      <ContadorProducto name ='Zelda ocarina of time Remake'/>
+      <ContadorProducto  name ='GTA 6'/>
+      <ContadorProducto name ='Wow Forever'/>
+      <ContadorProducto  name ='Residen evil 2'/>
 
 
 
