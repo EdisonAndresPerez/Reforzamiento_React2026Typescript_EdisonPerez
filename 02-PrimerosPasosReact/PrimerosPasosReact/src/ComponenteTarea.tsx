@@ -36,7 +36,11 @@ const ComponenteTarea = () => {
 
             <h3>Direccion</h3>
             <p
-            style={{}}
+            style={{
+                backgroundColor: '#fafafa',
+                borderRadius: 10,
+                padding: '3'
+            }}
             >
                 {JSON.stringify(direccion)}</p>
           
