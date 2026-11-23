@@ -34,7 +34,7 @@ const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProdu
                 onMouseEnter={() => console.log(`Pasas por encima de ${name}`)}
             >-{restarProducto}</button>
             <button
-                onClick={() => handleClick()}
+                onClick={handleClick}
             >+{agregarProducto}</button>
             <span><strong>{cantidadProducto}</strong></span>
         </section>
