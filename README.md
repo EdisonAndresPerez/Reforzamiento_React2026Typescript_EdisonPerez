@@ -75,14 +75,18 @@ Fundamentos de React usando Vite + TypeScript.
 
 ### Qué se está aprendiendo
 
-- Componentes
-- Estructura y nomenclatura
-- Hook `useState`
-- CSS condicional
-- Módulos de CSS
-- Impresión de variables
-- Props
-- Mucho más
+| # | Tema | Archivo | Puntos clave |
+|---|------|---------|--------------|
+| 01 | Limpieza de la plantilla | `index.html`, `src/main.tsx` | Se eliminan `App.tsx`, los CSS y los assets de ejemplo; `index.html` carga `/src/main.tsx` y monta en `#root`. |
+| 02 | Primer componente | `src/PrimerComponente.tsx`, `src/main.tsx` | Función que devuelve JSX, exportación `default` e importación desde el entry point. |
+| 03 | Impresión de variables | `src/ComponenteTarea.tsx` | Variables declaradas fuera del componente, interpolación `{nombre}` y `join(', ')` para arreglos. |
+| 04 | Condicionales y estilos en JSX | `src/ComponenteTarea.tsx` | Ternario para valores booleanos, objeto `style={{ ... }}` con llaves dobles y `JSON.stringify()`. |
+| 05 | Componente del carrito | `src/carrito-de-compras/ContadorProducto.tsx` | Componente propio en su carpeta, con botones de sumar/restar y un contador. |
+| 06 | Props con TypeScript | `src/carrito-de-compras/ContadorProducto.tsx`, `src/PrimerComponente.tsx` | Interface `DatosProductos`, desestructuración de props y valores enviados desde el componente padre. |
+| 07 | Listas y `key` | `src/PrimerComponente.tsx` | Arreglo tipado con `itemsDelCarrito`, recorrido con `.map()` y `key={nombreProducto}` para identificar cada fila. |
+| 08 | Eventos del DOM | `src/carrito-de-compras/ContadorProducto.tsx` | `onClick` y `onMouseEnter`, funciones flecha y `console.log` para ver cuándo se disparan. |
+| 09 | Hook `useState` | `src/carrito-de-compras/ContadorProducto.tsx` | Estado local `contador`, función `setContador` y manejadores `handleAdd` / `handleSubtract`. |
+| 10 | CSS por componente | `src/carrito-de-compras/ContadorProducto.css` | Import relativo al final de los imports, clases `listaItems` y `textoItems` aplicadas con `className`. |
 
 El objetivo es establecer una base sólida de los fundamentos de React sobre la cual continuar desarrollando.
 
@@ -92,10 +96,12 @@ El objetivo es establecer una base sólida de los fundamentos de React sobre la 
 02-PrimerosPasosReact/
 └── PrimerosPasosReact/
     ├── public/                 # favicon.svg e icons.svg
+    ├── index.html              # carga /src/main.tsx y define #root
+    ├── package.json
     └── src/
         ├── main.tsx            # punto de entrada; monta el componente activo
-        ├── PrimerComponente.tsx
-        ├── ComponenteTarea.tsx
+        ├── PrimerComponente.tsx         # carrito, componente activo
+        ├── ComponenteTarea.tsx          # primera tarea, sin montar
         └── carrito-de-compras/
             ├── ContadorProducto.tsx
             └── ContadorProducto.css
