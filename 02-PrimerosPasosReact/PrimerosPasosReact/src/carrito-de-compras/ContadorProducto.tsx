@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 interface DatosProductos {
     name: string
@@ -11,11 +12,23 @@ interface DatosProductos {
 
 
 const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProducto }: DatosProductos) => {
+    const [contador, setContador] = useState(0)
 
 
-    const handleClick = () => {
-        console.log(`Lediste click a ${name}`)
+
+    const handleAdd = () => {
+        setContador(contador + 1)
+        console.log('sumar')
     }
+    const handleSubtract = () => {
+        setContador(contador - 1)
+    }
+
+
+
+    // const handleClick = () => {
+    //     console.log(`Lediste click a ${name}`)
+    // }
 
     return (
         <section
@@ -34,9 +47,9 @@ const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProdu
                 onMouseEnter={() => console.log(`Pasas por encima de ${name}`)}
             >-{restarProducto}</button>
             <button
-                onClick={handleClick}
+                onClick={handleAdd}
             >+{agregarProducto}</button>
-            <span><strong>{cantidadProducto}</strong></span>
+            <span><strong>{contador}</strong></span>
         </section>
     );
 }
