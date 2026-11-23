@@ -25,7 +25,9 @@ const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProdu
                 color: 'blue',
             }}>{name}</span>
             <button>-{restarProducto}</button>
-            <button>+{agregarProducto}</button>
+            <button
+            onClick={() => console.log(`Lediste click a ${name}`)}
+            >+{agregarProducto}</button>
             <span><strong>{cantidadProducto}</strong></span>
         </section>
     );
