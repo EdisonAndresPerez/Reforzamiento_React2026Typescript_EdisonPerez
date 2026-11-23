@@ -1,9 +1,9 @@
 
 interface DatosProductos {
     name: string
-    agregarProducto : number
-    restarProducto : number
-    cantidadProducto : number
+    agregarProducto: number
+    restarProducto: number
+    cantidadProducto: number
 
 }
 
@@ -11,6 +11,12 @@ interface DatosProductos {
 
 
 const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProducto }: DatosProductos) => {
+
+
+    const handleClick = () => {
+        console.log(`Lediste click a ${name}`)
+    }
+
     return (
         <section
             style={{
@@ -25,10 +31,10 @@ const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProdu
                 color: 'blue',
             }}>{name}</span>
             <button
-            onMouseEnter={() => console.log(`Pasas por encima de ${name}`)}
+                onMouseEnter={() => console.log(`Pasas por encima de ${name}`)}
             >-{restarProducto}</button>
             <button
-            onClick={() => console.log(`Lediste click a ${name}`)}
+                onClick={() => handleClick()}
             >+{agregarProducto}</button>
             <span><strong>{cantidadProducto}</strong></span>
         </section>
