@@ -42,12 +42,9 @@ const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProdu
 
     return (
         <section
-            style={}
+            className="listaItems"
         >
-            <span style={{
-                width: 150,
-                color: 'blue',
-            }}>{name}</span>
+            <span className="textoItems">{name}</span>
             <button
                 onMouseEnter={() => console.log(`Pasas por encima de ${name}`)}
             >-{restarProducto}</button>
