@@ -14,7 +14,7 @@ interface DatosProductos {
     name: string
     agregarProducto: number
     restarProducto: number
-    cantidadProducto: number
+    cantidadProducto?: number
 
 }
 
@@ -31,6 +31,7 @@ const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProdu
         console.log('sumar')
     }
     const handleSubtract = () => {
+        if (contador === 0) return
         setContador(contador - 1)
     }
 
@@ -46,6 +47,7 @@ const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProdu
         >
             <span className="textoItems">{name}</span>
             <button
+                onClick={handleSubtract}
                 onMouseEnter={() => console.log(`Pasas por encima de ${name}`)}
             >-{restarProducto}</button>
             <button
