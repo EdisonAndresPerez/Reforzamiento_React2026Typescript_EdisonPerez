@@ -1,4 +1,14 @@
+//IMPORTACIONES DE ARRIBA LAS DE REACT
 import { useState } from "react"
+//IMPORTACIONES DE TERCEROS ACA
+
+
+//IMPORTACIONES PERSONALIZADAS
+
+//IMPORTACIONES DE CSS AL FINAL 
+import './ContadorProducto.css'
+
+
 
 interface DatosProductos {
     name: string
@@ -32,12 +42,7 @@ const ContadorProducto = ({ name, agregarProducto, cantidadProducto, restarProdu
 
     return (
         <section
-            style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 10,
-                marginTop: 10
-            }}
+            style={}
         >
             <span style={{
                 width: 150,
