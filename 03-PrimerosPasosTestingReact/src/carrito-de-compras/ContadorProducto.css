@@ -1,0 +1,13 @@
+
+
+.listaItems {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.textoItems {
+    width: 150px;
+    color: blue;
+}
