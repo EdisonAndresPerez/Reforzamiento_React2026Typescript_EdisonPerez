@@ -28,6 +28,5 @@ npm run lint
 
 ## Notas
 
-- `03-PrimerosPasosTestingReact-integrada` es un respaldo local de la rama 03 anterior (apuntaba a `main`); no usar para trabajo nuevo.
-- `origin/03-PrimerosPasosTestingReact` aún tiene la historia integrada: antes de hacer push hay que decidir entre force-with-lease u otro nombre remoto.
+- La historia integrada anterior de la rama 03 sigue disponible en `main`; la rama 03 actual es independiente y ya está publicada en `origin`.
 - Los PDFs de curso en la raíz están ignorados por Git; no son código de esta rama.

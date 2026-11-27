@@ -6,9 +6,9 @@
   - `01-reforzamiento_typescript` → `01-Reforzamiento2025/`
   - `02-primerosPasos_React` → `02-PrimerosPasosReact/PrimerosPasosReact/`
   - `03-PrimerosPasosTestingReact` (current) → `03-PrimerosPasosTestingReact/`: module 02 app plus Vitest.
-- `main` integrates modules 01 + 02 only; it is not the base for module work. `03-PrimerosPasosTestingReact-integrada` is a local backup of the old 03 branch that pointed at `main`.
+- `main` integrates modules 01 + 02 only; it is not the base for module work. The old integrated 03 history remains in `main`, not in this branch.
 - Before editing run `git branch --show-current` and `git status --short`. Each branch carries its own `AGENTS.md` / `README.md`; read the active ones.
-- `origin/03-PrimerosPasosTestingReact` still points to the old integrated history. Pushing the independent branch needs an explicit choice (force-with-lease or a different remote name); ask first.
+- `origin/03-PrimerosPasosTestingReact` matches this independent branch (pushed with `--force-with-lease`); the local branch tracks it.
 - Root PDFs are gitignored course material, not source. No stale `02-...` folder remains in this branch.
 
 ## Commands
