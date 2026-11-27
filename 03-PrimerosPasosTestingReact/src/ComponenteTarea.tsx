@@ -1,6 +1,6 @@
 
 const nombre = 'Andres'
-const apellido = 'Perez'
+const apellido = '  Perez   '
 
 const listaJuegosFavoritos = ['Wow', 'GTA6', 'Resident Evil 2',]
 
