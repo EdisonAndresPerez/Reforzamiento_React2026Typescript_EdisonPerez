@@ -3,6 +3,7 @@ import { add, multiply, subtract } from "./math.helpers";
 
 //describe => agrupa pruebas relacionadas
 describe("Agrupacion de pruebas: add - subtract - multiply ", () => {
+    //test => define una prueba individual
     test("Primera prueba sumar (add)", () => {
         //1 Arrange
         const a = 1;
@@ -10,6 +11,7 @@ describe("Agrupacion de pruebas: add - subtract - multiply ", () => {
         //2 Act
         const resultadoSuma = add(a, b);
         //3 Assert
+        //expect => realiza una asercion para comprobar el resultado esperado.
         expect(resultadoSuma).toBe(a + b);
         console.log({ resultadoSuma });
 
