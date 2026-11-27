@@ -1,14 +1,20 @@
-import { test } from "vitest";
+import { expect, test } from "vitest";
 import { add } from "./math.helpers";
 
 test('Primera prueba', () => {
-    console.log('Hola mundooo')
 
-    const resultadoSuma = add(2,2);
+
+    //1 Arrange
+    const a = 1;
+    const b = 3;
+    //2 Act
+    const resultadoSuma = add(a, b);
+    //3 Assert
     console.log({resultadoSuma})
-
-    if ( resultadoSuma != 4){
-        throw new Error ('Los numeros no dan el resultado esperado')
-    }
+    expect(resultadoSuma).toBe(a + b)
+    
+    // if ( resultadoSuma != 4){
+    //     throw new Error ('Los numeros no dan el resultado esperado')
+    // }
 
 })
