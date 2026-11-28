@@ -14,8 +14,10 @@ describe('ComponenteTarea', () => {
 
         expect(h1?.innerHTML).toBe('Andres')
         expect(h3?.innerHTML).toContain('Perez')
+    })
 
-
-
+    test('Prueba con snapshot', () => {
+        const { container } = render(<ComponenteTarea />)
+        expect(container).toMatchSnapshot();
     })
 })

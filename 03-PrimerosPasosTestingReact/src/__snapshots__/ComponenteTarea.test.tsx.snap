@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ComponenteTarea > Prueba con snapshot 1`] = `
+<div>
+  <div>
+    <h1>
+      Andres
+    </h1>
+    <h3>
+        Perez   
+    </h3>
+    <p>
+      Mis juegos favoritos: 
+      Wow, GTA6, Resident Evil 2
+    </p>
+    <h3>
+      Estudiante
+    </h3>
+    <p>
+      Estudia en la UNAD
+    </p>
+    <h3>
+      Direccion
+    </h3>
+    <p
+      style="background-color: rgb(250, 250, 250); border-radius: 10px;"
+    >
+      {"barrio":"Viveros MZ A-210","ciudad":"Ibague","Pais":"Colombia"}
+    </p>
+  </div>
+</div>
+`;
